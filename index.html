@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Custom Sign Up Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Validation</h2>
+      <form class="custom-form">
+        <div class="custom-form-inline">
+          <div class="custom-form-field">
+            <input
+              type="text"
+              autocomplete="off"
+              name="first_name"
+              class="custom-form-input"
+              id="first_name"
+              placeholder=" "
+            />
+            <label for="first_name">First Name</label>
+            <span class="custom-form-check"></span>
+          </div>
+          <div class="custom-form-field">
+            <input
+              type="text"
+              autocomplete="off"
+              class="custom-form-input"
+              id="last_name"
+              name="last_name"
+              placeholder=" "
+            />
+            <label for="last_name">Last Name</label>
+            <span class="custom-form-check"></span>
+          </div>
+        </div>
+        <div class="custom-form-field">
+          <input
+            type="text"
+            autocomplete="off"
+            class="custom-form-input"
+            name="email"
+            id="email"
+            placeholder=" "
+          />
+          <label for="email">Email</label>
+          <span class="custom-form-check"></span>
+        </div>
+        <div class="custom-form-field">
+          <input
+            type="text"
+            autocomplete="off"
+            class="custom-form-input"
+            name="phone"
+            placeholder=" "
+            id="phone"
+          />
+          <label for="phone">Phone Number</label>
+          <span class="custom-form-check"></span>
+        </div>
+        <div class="custom-form-field">
+          <input
+            type="text"
+            autocomplete="off"
+            class="custom-form-input"
+            id="username"
+            placeholder=" "
+            name="username"
+          />
+          <label for="username">Username</label>
+          <span class="custom-form-check"></span>
+        </div>
+        <div class="custom-form-field">
+          <input
+            type="password"
+            class="custom-form-input"
+            id="password"
+            placeholder=" "
+            name="password"
+          />
+          <label for="password">Password</label>
+          <span class="custom-form-check"></span>
+        </div>
+        <div class="custom-form-field">
+          <input
+            type="password"
+            class="custom-form-input"
+            id="confirm_password"
+            name="confirm_password"
+            placeholder=" "
+          />
+          <label for="confirm_password">Confirm Password</label>
+          <span class="custom-form-check"></span>
+        </div>
+        <div class="custom-form-field">
+          <input
+            type="submit"
+            class="custom-form-submit"
+            name="submit"
+            id="submit"
+            value="validate"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

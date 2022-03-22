@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background-color: #f3f3f3;
+  height: 100vh;
+}
+.container {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 1rem;
+}
+.container h2 {
+  padding: 1rem 0;
+}
+.custom-form-input {
+  width: 100%;
+  font-size: 18px;
+  padding: 0.3rem;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+.custom-form-check {
+  position: absolute;
+  left: 2.5%;
+  bottom: 0;
+}
+.error input {
+  border-color: #ff0e0e;
+  background-color: #ffeded;
+}
+.error span {
+  color: #ff0e0e;
+}
+
+.custom-form-field label {
+  position: absolute;
+  bottom: 40%;
+  left: 2.5%;
+  transition: top 0.5s ease-out, font-size 0.5s;
+}
+.custom-form-input:not(:placeholder-shown) + label {
+  font-size: 12px;
+  top: 0;
+  left: 0;
+}
+.custom-form-input:focus {
+  outline: 0;
+  border-bottom: 2px solid #d4d401;
+}
+.custom-form-input:focus + label {
+  font-size: 12px;
+  top: 0;
+  left: 0;
+}
+.custom-form-field {
+  padding: 1.5rem 0.3rem;
+  position: relative;
+}
+.custom-form-submit {
+  font-size: 18px;
+  padding: 8px 16px;
+  background-color: navy;
+  color: #fff;
+  border: 0;
+}
+@media screen and (min-width: 768px) {
+  .custom-form-inline {
+    display: flex;
+  }
+  .custom-form-inline > div {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 50%;
+  }
+}
